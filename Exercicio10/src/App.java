@@ -9,14 +9,20 @@ public class App {
 
         float valueProduct;
         float valueParcel;
+        float valueTotal;
 
-        System.out.print("Digite o valor do produto: ");
+        System.out.print("Digite o valor do produto: R$ ");
         valueProduct = leitor.nextFloat();
 
-        valueParcel = valueProduct / 5;
+        System.out.print("Digite o numero de parcelas que quer dividir: ");
+        valueParcel = leitor.nextFloat();
 
+        valueTotal = (valueProduct / valueParcel);
+
+        System.out.println("#################################################");
         System.out.println("LOJA MAMÃO COM AÇUCAR");
-        System.out.println("5 parcelas de: " + decimal.format(valueParcel));
+        System.out.println(
+                "Produto dividido em " + (int) valueParcel + "x parcelas de R$: " + decimal.format(valueTotal));
 
     }
 }

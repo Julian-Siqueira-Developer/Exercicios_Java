@@ -9,6 +9,7 @@ public class App {
 
         System.out.print("Digite um numero: ");
         n1 = leitor.nextInt();
+
         System.out.print("Digite outro numero: ");
         n2 = leitor.nextInt();
 
